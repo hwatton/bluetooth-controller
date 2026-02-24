@@ -4,6 +4,10 @@ import Svg, { Circle } from "react-native-svg";
 
 type Coord = { x: number; y: number };
 
+// Next version - implement a better gesture system using UI thread if possible or
+// look at how to capture more of these states as coordinates.
+// if there are enough to be able to interpret a medium paced simple gesture that will sufice for now
+
 export default function TabTwoScreen() {
   //const [gS, setGs] = useState<PanResponderGestureState | null>(null);
   const pan = useRef(new Animated.ValueXY()).current;
